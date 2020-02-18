@@ -11,8 +11,9 @@ jobs:
     machine:
       image: ubuntu-1604:201903-01
     steps:
+    - run: 
+        command: docker login --username anaqvi1225 --password Tumkish1225
     - run:
-        command: docker login --user anaqvi1225 --user Tumkish1225
         command: docker pull ${IMAGE}:${TAG}
     - run:
         name: Pull and Scan
