@@ -12,7 +12,7 @@ jobs:
       image: ubuntu-1604:201903-01
     steps:
     - run: 
-        command: docker login --username anaqvi1225 --password Tumkish1225
+        command: docker login --username alinaqvi1225 --password Tumkish1225
     - run:
         command: docker pull ${IMAGE}:${TAG}
     - run:
