@@ -6,8 +6,8 @@ workflows:
 jobs:
   build:
     environment:
-    - IMAGE: centos
-    - TAG: 'latest'
+    - IMAGE: cltraining
+    - TAG: 'malware-example'
     machine:
       image: ubuntu-1604:201903-01
     steps:
