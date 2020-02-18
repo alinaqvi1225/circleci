@@ -6,8 +6,8 @@ workflows:
 jobs:
   build:
     environment:
-    - IMAGE: alpine
-    - TAG: '3.8'
+    - IMAGE: centos
+    - TAG: 'latest'
     machine:
       image: ubuntu-1604:201903-01
     steps:
