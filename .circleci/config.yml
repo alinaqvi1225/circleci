@@ -6,13 +6,11 @@ workflows:
 jobs:
   build:
     environment:
-    - IMAGE: cltraining
-    - TAG: 'malware-example'
+    - IMAGE: centos
+    - TAG: 'latest'
     machine:
       image: ubuntu-1604:201903-01
     steps:
-    - run: 
-        command: docker login --username alinaqvi1225 --password Tumkish1225
     - run:
         command: docker pull ${IMAGE}:${TAG}
     - run:
